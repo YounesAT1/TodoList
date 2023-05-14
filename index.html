@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo App</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="web site icon"
+            href="imgs/todo-list-icon-17.png"
+            type="png"
+        />
+        <script
+            src="https://kit.fontawesome.com/9334fbe085.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body id="body">
+        <div class="container">
+            <h1>
+                <img
+                    id="Logo"
+                    src="imgs/todo-list-svgrepo-com.svg"
+                    alt="Todo-Logo"
+                />
+                Todo List
+            </h1>
+            <div class="input-box">
+                <input
+                    type="text"
+                    class="text-input"
+                    placeholder="Add a Task..."
+                />
+                <span class="error">Please enter a task !!</span>
+                <div class="add-btn" onclick="addTask()">
+                    <i class="fa-solid fa-plus"></i>Add
+                </div>
+            </div>
+            <ul class="task-list"></ul>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
